@@ -1,0 +1,24 @@
+[project]
+name = "stateful-agent"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Revathy", email = "rsanthos@nyit.edu" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=7.4.0",
+    "langchain-openai>=1.7.2",
+    "langgraph>=1.2.16",
+    "langgraph-checkpoint-sqlite>=3.1.2",
+    "langsmith>=0.14.11",
+    "python-dotenv>=1.2.4",
+]
+
+[project.scripts]
+stateful-agent = "stateful_agent:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
